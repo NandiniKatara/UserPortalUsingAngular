@@ -1,0 +1,40 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    justify-items: center;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: purple;
+    margin-left: 1rem;
+}
+
+.card-main {
+    background-color: burlywood;
+    border: 2px solid black;
+    width: 22rem;
+    height: 11rem;
+    padding: 1.5rem;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-main:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+#loading {
+    text-align: center;
+    font-size: 80px;
+    color: purple;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10rem;
+}

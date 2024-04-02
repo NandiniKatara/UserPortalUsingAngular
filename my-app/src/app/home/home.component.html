@@ -1,0 +1,12 @@
+<div *ngIf="!users">
+    <p id="loading">Loading...</p>
+</div>
+
+<div *ngIf="users">
+    <h1>Users List:</h1>
+    <div class="card-container">
+        <div class="card-main" *ngFor="let user of users">
+            <app-user-card [user]="user" (viewDetails)="navigateToDetails($event)"></app-user-card>
+        </div>
+    </div>
+</div>
