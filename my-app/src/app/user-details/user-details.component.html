@@ -1,28 +1,28 @@
 <div *ngIf="!user">
-    <p id="loading" >Loading...</p>
-  </div>
+  <p id="loading">Loading...</p>
+</div>
 
 <div *ngIf="user" class="details-main">
-<div class="details-card">
-    <div > <b class="heading">User Id : </b>{{ user?.id }}</div>
-    <p> <b class="heading">Name : </b><b>{{ user?.name | uppercase}}</b></p>
-    <p><b class="heading">User Name : </b>{{ user?.username }}</p>
-    <p><b class="heading">Email : </b>{{ user?.email }}</p>
-    <p><b class="heading">Address : </b> 
-    {{user?.address?.street}}
-    {{user?.address?.suite}}
-    {{user?.address?.city}}
-    {{user?.address?.zipcode}}</p>
-    <p><b class="heading">Geo :   </b>&nbsp;
-    Latitude: {{user?.address?.geo?.lat}}   &nbsp; &nbsp; 
-    Longitude : {{user?.address?.geo?.lng}}</p>
-    <p><b class="heading">Phone Number : </b>{{ user?.phone }}</p>
-    <p><b class="heading">Website : </b>{{ user?.website }}</p>
-    <p><b class="heading">Company Name : </b>{{ user?.company?.name }}</p>
-    <p><b class="heading">Company CatchPhrase : </b>{{ user?.company?.catchPhrase}}</p>
-    <p><b class="heading">Company BS : </b>{{ user?.company?.bs}}</p>
+  <div class="details-card">
+    <div> <b class="heading">User Id : </b>{{ user.id }}</div>
+    <p> <b class="heading">Name : </b><b>{{ user.name | uppercase}}</b></p>
+    <p><b class="heading">User Name : </b>{{ user.username }}</p>
+    <p><b class="heading">Email : </b>{{ user.email }}</p>
+    <p><b class="heading">Address : </b>
+      {{user.address.street}}
+      {{user.address.suite}}
+      {{user.address.city}}
+      {{user.address.zipcode}}</p>
+    <p><b class="heading">Geo : </b>&nbsp;
+      Latitude: {{user.address.geo.lat}} &nbsp; &nbsp;
+      Longitude : {{user.address.geo.lng}}</p>
+    <p><b class="heading">Phone Number : </b>{{ user.phone }}</p>
+    <p><b class="heading">Website : </b>{{ user.website }}</p>
+    <p><b class="heading">Company Name : </b>{{ user.company.name }}</p>
+    <p><b class="heading">Company CatchPhrase : </b>{{ user.company.catchPhrase}}</p>
+    <p><b class="heading">Company BS : </b>{{ user.company.bs}}</p>
     <button (click)="onClick()" class="button-back">Go Back</button>
   </div>
-  
+
 </div>
   
